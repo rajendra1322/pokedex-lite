@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { fetchPokemonList, fetchPokemonDetails } from "./services/api";
 import PokemonCard from "./components/PokemanCard";
 import PokemonModal from "./components/PokemonModal";
+import logo from './assets/logos.png'
 
 export default function App() {
   const [search, setSearch] = useState("");
@@ -75,9 +76,17 @@ export default function App() {
       animate={{ opacity: 1 }}
       className="min-h-screen bg-gradient-to-b from-yellow-200 via-blue-200 to-green-200 p-4"
     >
-      <h1 className="text-4xl font-extrabold text-center mb-6 text-red-600">
-        Pokedex Lite
-      </h1>
+     <div className="flex items-center justify-center gap-3">
+  <img
+    src={logo}
+    alt="logo"
+    className="w-10 h-10 animate-bounce mb-12"
+  />
+
+  <h1 className="text-4xl font-extrabold text-red-600 mb-12">
+    Pokedex Lite
+  </h1>
+</div>
 
       <input
         type="text"
@@ -129,22 +138,20 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      <div className="flex justify-center gap-4 mt-6">
-        <button
-          onClick={() => setPage((p) => Math.max(p - 1, 0))}
-          className="bg-yellow-400 px-4 py-2 rounded-full"
-        >
-          ⬅ Prev
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10 mt-4">
+
+        <button className="px-4 py-2 bg-yellow-400 rounded-full flex items-center gap-2" onClick={() => setPage((p) => Math.max(p - 1, 0))}>
+          ← Prev
         </button>
 
-        <span>Page {page + 1}</span>
+        <span className="text-lg font-semibold">
+          Page 1
+        </span>
 
-        <button
-          onClick={() => setPage((p) => p + 1)}
-          className="bg-yellow-400 px-4 py-2 rounded-full"
-        >
-          Next ➡
+        <button className="px-4 py-2 bg-yellow-400 rounded-full flex items-center gap-2" onClick={() => setPage((p) => p + 1)}>
+          Next →
         </button>
+
       </div>
     </motion.div>
   );
