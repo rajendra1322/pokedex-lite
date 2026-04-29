@@ -1,16 +1,68 @@
-# React + Vite
+# Pokedex Lite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
 
-Currently, two official plugins are available:
+Pokedex Lite is a simple web application built using React that allows users to explore Pokemon data. The app fetches data from the PokeAPI and displays it in a clean and user-friendly interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The main idea behind this project was to practice working with APIs, handling state in React, and building a responsive UI using Tailwind CSS.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* Search Pokemon by name
+* Filter Pokemon based on type
+* Pagination to navigate through the list
+* Mark/unmark Pokemon as favorites
+* View detailed information like stats and abilities
+* Responsive design for mobile and desktop
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+* React (Vite)
+* Tailwind CSS
+* PokeAPI
+
+---
+
+## How to Run
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## Live Demo
+
+(Add your deployed link here)
+
+---
+
+## Challenges Faced
+
+One challenge was handling multiple API calls when filtering Pokemon by type. I solved this by fetching details using Promise.all, which helped improve performance.
+
+Another challenge was managing different states like favorites, search, and pagination together without breaking the UI.
+
+---
+
+## What I Learned
+
+* Working with APIs and async functions
+* Managing state effectively in React
+* Building reusable components
+* Creating responsive layouts using Tailwind
+
+---
+
+## Future Improvements
+
+* Add login functionality
+* Improve UI animations
+* Optimize performance further
+
+---
