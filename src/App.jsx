@@ -8,7 +8,7 @@ import logo from './assets/logos.png'
 export default function App() {
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [type, setType] = useState("");
   const [pokemonDetails, setPokemonDetails] = useState([]);
@@ -138,14 +138,14 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10 mt-4">
+      <div className="flex flex-row sm:flex-row items-center justify-center gap-4 sm:gap-10 mt-4">
 
         <button className="px-4 py-2 bg-yellow-400 rounded-full flex items-center gap-2" onClick={() => setPage((p) => Math.max(p - 1, 0))}>
           ← Prev
         </button>
 
         <span className="text-lg font-semibold">
-          Page 1
+          Page {page}
         </span>
 
         <button className="px-4 py-2 bg-yellow-400 rounded-full flex items-center gap-2" onClick={() => setPage((p) => p + 1)}>
