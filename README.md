@@ -1,68 +1,57 @@
-# Pokedex Lite
+Pokedex Lite
 
-## About the Project
+About the Project
 
-Pokedex Lite is a simple web application built using React that allows users to explore Pokemon data. The app fetches data from the PokeAPI and displays it in a clean and user-friendly interface.
+Pokedex Lite is a simple web application built using React that allows users to explore Pokemon data. The app fetches data from the PokéAPI and displays it in a clean and interactive interface.
 
-The main idea behind this project was to practice working with APIs, handling state in React, and building a responsive UI using Tailwind CSS.
+The main purpose of this project was to practice working with APIs, managing state in React, and building a responsive UI using Tailwind CSS. I also improved the user experience by adding smooth animations using Framer Motion.
 
----
+Features
 
-## Features
+Search Pokemon by name
+Filter Pokemon by type
+Pagination to browse through the list
+Add and remove favorites (saved in local storage)
+View detailed Pokemon information such as stats, abilities, height, and weight
+Fully responsive design for mobile, tablet, and desktop
+Smooth animations using Framer Motion for cards and modal transitions
 
-* Search Pokemon by name
-* Filter Pokemon based on type
-* Pagination to navigate through the list
-* Mark/unmark Pokemon as favorites
-* View detailed information like stats and abilities
-* Responsive design for mobile and desktop
+Tech Stack
 
----
+React (Vite)
+Tailwind CSS
+Framer Motion
 
-## Tech Stack
+PokéAPI
 
-* React (Vite)
-* Tailwind CSS
-* PokeAPI
+How to Run
 
----
-
-## How to Run
-
-```bash
 npm install
 npm run dev
-```
 
----
+Live Demo
 
-## Live Demo
+https://pokedex--lite.vercel.app
 
-(Add your deployed link here)
+Challenges Faced
 
----
+One of the challenges was handling multiple API calls while fetching Pokemon details. This was solved using Promise.all, which helped improve performance.
 
-## Challenges Faced
+Another challenge was managing search, filter, pagination, and favorites together without breaking the UI flow.
 
-One challenge was handling multiple API calls when filtering Pokemon by type. I solved this by fetching details using Promise.all, which helped improve performance.
+What I Learned
 
-Another challenge was managing different states like favorites, search, and pagination together without breaking the UI.
+Working with APIs using async and await
+Managing state in React using hooks
+Building reusable components
+Creating responsive layouts with Tailwind CSS
+Using Framer Motion for animations
+Handling multiple UI states properly
 
----
+Future Improvements
 
-## What I Learned
-
-* Working with APIs and async functions
-* Managing state effectively in React
-* Building reusable components
-* Creating responsive layouts using Tailwind
-
----
-
-## Future Improvements
-
-* Add login functionality
-* Improve UI animations
-* Optimize performance further
-
----
+Add login functionality
+Improve animations further
+Add infinite scroll instead of pagination
+Optimize API performance
+Add more advanced filters
