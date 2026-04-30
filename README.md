@@ -10,30 +10,40 @@ I built this project mainly to practice working with APIs, React state managemen
 
 ## Features
 
-*Search Pokémon by name
-*Filter Pokémon by type
-*Pagination to move through the list
-*Add/remove favorites (stored in local storage)
-*View detailed Pokémon info like stats, abilities, height, and weight
-*Fully responsive for mobile, tablet, and desktop
-*Smooth animations for cards and popup modal
+Search Pokémon by name
+
+Filter Pokémon by type
+
+Pagination to move through the list
+
+Add/remove favorites (stored in local storage)
+
+View detailed Pokémon info like stats, abilities, height, and weight
+
+Fully responsive for mobile, tablet, and desktop
+
+Smooth animations for cards and popup modal
 
 ---
 
 
 ## Tech Stack
 
-*React (Vite)
-*Tailwind CSS
-*Framer Motion
-*PokéAPI
+React (Vite)
+
+Tailwind CSS
+
+Framer Motion
+
+PokéAPI
 
 ---
 
 
 ## How to Run
-bash
+
 npm install
+
 npm run dev
 
 ---
@@ -59,22 +69,32 @@ Another challenge was managing search, filter, pagination, and favorites togethe
 
 
 ## What I Learned
-*How to work with APIs using async/await
-*How to manage state in React
-*How to build reusable components
-*How to make responsive layouts using Tailwind CSS
-*How to add animations using Framer Motion
-*How to handle multiple UI states properly
+
+How to work with APIs using async/await
+
+How to manage state in React
+
+How to build reusable components
+
+How to make responsive layouts using Tailwind CSS
+
+How to add animations using Framer Motion
+
+How to handle multiple UI states properly
 
 ---
 
 
 ## Future Improvements
 
-*Add login system
-*Improve performance
-*Add infinite scroll instead of pagination
-*Add more filters
-*Improve UI animations
+Add login system
+
+Improve performance
+
+Add infinite scroll instead of pagination
+
+Add more filters
+
+Improve UI animations
 
 ---
