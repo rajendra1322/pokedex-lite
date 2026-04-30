@@ -9,7 +9,7 @@ import header from './assets/pokedexheader.png'
 export default function App() {
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [type, setType] = useState("");
   const [pokemonDetails, setPokemonDetails] = useState([]);
